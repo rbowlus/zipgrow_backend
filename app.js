@@ -13,7 +13,7 @@ const search = require('./src/routes/api/search')
 app.use(cors());
 
 app.get('/backend', (req, res) => {
-    res.send('Hello World!')
+    res.send({'message': 'this works'})
 })
 
 app.get('/api/listall', async (req, res) => {
