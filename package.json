@@ -1,0 +1,42 @@
+{
+  "name": "zipgrow_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "jest -i --verbose --coverage --runInBand",
+    "start": "node app.js",
+    "dboff": "killall mongod",
+    "watch": "nodemon app.js",
+    "dbon": "mkdir -p ./db && mongod --dbpath ./db"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbowlus/zipgrow_backend.git"
+  },
+  "keywords": [],
+  "author": "Rachel Bowlus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rbowlus/zipgrow_backend/issues"
+  },
+  "homepage": "https://github.com/rbowlus/zipgrow_backend#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "mongoose": "^5.13.5",
+    "superagent": "^6.1.0",
+    "validation": "0.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12"
+  }
+}
